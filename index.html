@@ -23,9 +23,30 @@
         <li><a class="nav-link" href="#projects">Project</a></li>
         <li><a class="nav-link" href="#qualifications">Education</a></li>
         <li><a class="nav-link nav-contact" href="#contact">Contact</a></li>
+        <li><button class="terminal-open-btn" id="terminal-open" type="button">Terminal Mode &gt;_</button></li>
       </ul>
     </nav>
   </header>
+
+
+  <!-- Terminal Mode -->
+  <section class="terminal-screen" id="terminal-screen" aria-label="Interactive terminal" aria-hidden="true" hidden>
+    <div class="terminal-window">
+      <div class="terminal-topbar">
+        <div class="terminal-dots"><i></i><i></i><i></i></div>
+        <span>saisha@portfolio:~</span>
+        <button type="button" id="terminal-close" class="terminal-close" aria-label="Exit Terminal Mode">Exit Terminal</button>
+      </div>
+      <div class="terminal-content" id="terminal-output" aria-live="polite">
+        <p>Welcome to Saisha Rite's portfolio terminal.</p>
+        <p>Type <strong>help</strong> to see available commands.</p>
+      </div>
+      <form class="terminal-input-row" id="terminal-form">
+        <label for="terminal-input">saisha@portfolio:~$</label>
+        <input id="terminal-input" type="text" autocomplete="off" spellcheck="false" aria-label="Enter terminal command" placeholder="type help and press Enter">
+      </form>
+    </div>
+  </section>
 
   <main>
     <section class="hero section" id="home">
@@ -40,7 +61,7 @@
             <a class="button button-secondary" href="#projects">View My Work</a>
           </div>
           <div class="hero-stats" aria-label="Portfolio highlights">
-            <div class="hero-stat"><strong>03</strong><span>Featured Projects</span></div>
+            <div class="hero-stat"><strong>04</strong><span>Featured Projects</span></div>
             <div class="hero-stat"><strong>CSE</strong><span>SVNIT Surat</span></div>
             <div class="hero-stat"><strong>02</strong><span>Team Project</span></div>
           </div>
@@ -219,19 +240,35 @@ I believe in continuous learning, problem solving, and building meaningful proje
         <div class="projects-grid">
           <article class="project-card reveal">
             <div class="project-art art-blue"><span class="art-index">01 / FRONTEND</span><div class="browser-art"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-bar"></div><div class="browser-blocks"><i></i><i></i><i></i></div></div></div>
-            <div class="project-body"><div class="project-label"><span class="status-dot"></span> Portfolio Project</div><h3>Personal Portfolio Website</h3><p>A responsive single-page website featuring my introduction, skill set, projects, qualifications, and contact details.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/YOUR-GITHUB-USERNAME/personal-portfolio" target="_blank" rel="noopener noreferrer">View GitHub Repositories <span>↗</span></a></div>
+            <div class="project-body"><div class="project-label"><span class="status-dot"></span> Portfolio Project</div><h3>Personal Portfolio Website</h3><p>A responsive single-page website featuring my introduction, skill set, projects, qualifications, and contact details.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/SaishaRite/WD_1_PersonalPortfolio_byte" target="_blank" rel="noopener noreferrer">View GitHub Repositories <span>↗</span></a></div>
           </article>
           <article class="project-card reveal">
             <div class="project-art art-purple"><span class="art-index">02 / WEB APP</span><div class="art-icon">↔</div><div class="art-lines"><i></i><i></i><i></i></div></div>
-            <div class="project-body"><div class="project-label"><span class="status-dot"></span> In development</div><h3>BorrowHub</h3><p>A campus resource-sharing platform concept where students can list, discover, lend, and borrow items such as calculators, books, and lab equipment.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Database</span></div><a class="project-link" href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener noreferrer">GitHub profile <span>↗</span></a></div>
+            <div class="project-body"><div class="project-label"><span class="status-dot"></span> In development</div><h3>BorrowHub</h3><p>A campus resource-sharing platform concept where students can list, discover, lend, and borrow items such as calculators, books, and lab equipment.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Database</span></div><a class="project-link" href="https://github.com/SaishaRite" target="_blank" rel="noopener noreferrer">GitHub profile <span>↗</span></a></div>
           </article>
 
 
 
           
 <article class="project-card reveal">
+    <div class="project-art art-green">
+        <span class="art-index">03 / LANDING PAGE</span>
+        <div class="art-icon">⌘</div>
+        <div class="art-lines"><i></i><i></i><i></i></div>
+    </div>
+    <div class="project-body">
+        <div class="project-label"><span class="status-dot"></span> Responsive Web Design</div>
+        <h3>NexaFlow — Responsive Landing Page</h3>
+        <p>A matrix-inspired responsive landing page featuring parallax scrolling, interactive interface elements, and a modern layout for teams and workflows.</p>
+        <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        <a class="project-link" href="https://github.com/SaishaRite/WD_2_ResponsiveLandingPage_byte" target="_blank" rel="noopener noreferrer">View GitHub <span>↗</span></a>
+        <a class="project-link" href="https://nexaflow-saisharite.vercel.app" target="_blank" rel="noopener noreferrer">View Live Project <span>↗</span></a>
+    </div>
+</article>
+
+<article class="project-card reveal">
     <div class="project-art art-purple">
-        <span class="art-index">03 / HACKATHON</span>
+        <span class="art-index">04 / HACKATHON</span>
         <div class="art-icon">✦</div>
         <div class="art-lines">
             <i></i>
@@ -340,8 +377,11 @@ I believe in continuous learning, problem solving, and building meaningful proje
 </div>
       </div>
     </section>
+    
 
-     <section class="section section-muted" id="contact">
+
+
+ <section class="section section-muted" id="contact">
       <div class="container">
         <div class="contact-wrap reveal">
           <div class="contact-copy"><p class="section-kicker">GET IN TOUCH</p><h2>Let's turn Good <br>ideas into <span class="gradient-text">Real Projects.</span></h2><p>For Project Collaborations, Technical discussions, or opportunities, Contact Me through Email or Connect with me on GitHub and LinkedIn.</p>
@@ -356,6 +396,8 @@ I believe in continuous learning, problem solving, and building meaningful proje
           <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzedgydo" method="POST">
 
     <h3>Send a message</h3>
+
+
 
     <p>
         Have a question or an exciting idea?
@@ -517,7 +559,7 @@ I believe in continuous learning, problem solving, and building meaningful proje
 
     formspree("initForm", {
         formElement: "#contact-form",
-        formId: "xnppzerz"
+        formId: "xzedgydo"
     });
 </script>
 
@@ -525,5 +567,93 @@ I believe in continuous learning, problem solving, and building meaningful proje
     src="https://unpkg.com/@formspree/ajax@1"
     defer>
 </script>
+
+<style>
+.terminal-open-btn{border:1px solid #9d70d5;background:rgba(157,112,213,.12);color:inherit;border-radius:8px;padding:9px 12px;font:inherit;font-size:.82rem;cursor:pointer;white-space:nowrap}
+.terminal-open-btn:hover{background:rgba(157,112,213,.25)}
+.terminal-screen{position:fixed;inset:0;z-index:9999;background:rgba(5,8,12,.97);padding:clamp(12px,4vw,48px);display:grid;place-items:center;color:#b7ffc8;font-family:Consolas,Monaco,monospace}
+.terminal-screen[hidden]{display:none}
+.terminal-window{width:min(900px,100%);height:min(680px,90vh);border:1px solid #286b43;border-radius:12px;background:#07110b;box-shadow:0 0 45px rgba(48,220,105,.12);display:flex;flex-direction:column;overflow:hidden}
+.terminal-topbar{min-height:48px;padding:10px 14px;background:#101c14;border-bottom:1px solid #286b43;display:flex;align-items:center;gap:14px;color:#9bbda4;font-size:13px}
+.terminal-dots{display:flex;gap:5px}.terminal-dots i{width:9px;height:9px;border-radius:50%;background:#f87171}.terminal-dots i:nth-child(2){background:#fbbf24}.terminal-dots i:nth-child(3){background:#4ade80}
+.terminal-close{margin-left:auto;background:transparent;border:1px solid #43865a;color:#b7ffc8;border-radius:6px;padding:6px 10px;cursor:pointer}
+.terminal-content{padding:22px;overflow:auto;flex:1;font-size:14px;line-height:1.7;overflow-wrap:anywhere}.terminal-content p{margin:0 0 8px}.terminal-content .terminal-command{color:#fff}.terminal-content .terminal-error{color:#ff9b9b}
+.terminal-input-row{display:flex;gap:10px;align-items:center;padding:15px 20px;border-top:1px solid #286b43;background:#0b170e}.terminal-input-row label{white-space:nowrap;color:#68e891;font-size:13px}.terminal-input-row input{min-width:0;flex:1;background:transparent;border:0;outline:0;color:#fff;font:inherit;font-size:14px}
+body.terminal-active{overflow:hidden}
+@media(max-width:700px){.terminal-open-btn{width:100%;margin-top:6px}.terminal-topbar{gap:8px}.terminal-content{padding:15px;font-size:13px}.terminal-input-row{padding:12px;align-items:flex-start;flex-direction:column}.terminal-input-row input{width:100%}}
+</style>
+<script>
+(() => {
+  const screen = document.getElementById('terminal-screen');
+  const openButton = document.getElementById('terminal-open');
+  const closeButton = document.getElementById('terminal-close');
+  const form = document.getElementById('terminal-form');
+  const input = document.getElementById('terminal-input');
+  const output = document.getElementById('terminal-output');
+  if (!screen || !openButton || !closeButton || !form || !input || !output) return;
+
+  const commands = {
+    help: [
+      'Available commands:',
+      'about    - Learn about me',
+      'skills   - View my technical skills',
+      'projects - List my four projects',
+      'contact  - Show contact details',
+      'clear    - Clear the terminal',
+      'exit     - Return to the normal portfolio'
+    ],
+    about: ['I am Saisha Rite, a Computer Science and Engineering student at SVNIT Surat.', 'I enjoy web development, problem solving, and building useful software.'],
+    skills: ['Programming: C, C++, Python, SQL', 'Web: HTML, CSS, JavaScript', 'Tools: Git, GitHub, VS Code', 'Currently learning: Node.js'],
+    projects: [
+      '01. Personal Portfolio Website — responsive portfolio with interactive Terminal Mode.',
+      '    GitHub: https://github.com/SaishaRite/WD_1_PersonalPortfolio_byte',
+      '02. BorrowHub — campus resource-sharing platform (in development).',
+      '    GitHub profile: https://github.com/SaishaRite',
+      '03. NexaFlow — responsive matrix-inspired landing page.',
+      '    Live: https://nexaflow-saisharite.vercel.app',
+      '04. Pip’s Dream World — collaborative 48-hour HAX.Baby hackathon project.',
+      '    Live: https://haxbaby-olive.vercel.app'
+    ],
+    contact: ['Email: saisamrat2020@gmail.com', 'GitHub: https://github.com/SaishaRite', 'LinkedIn: https://www.linkedin.com/in/saisha-rite-6aba95383']
+  };
+
+  function printLine(text, className = '') {
+    const line = document.createElement('p');
+    if (className) line.className = className;
+    line.textContent = text;
+    output.appendChild(line);
+    output.scrollTop = output.scrollHeight;
+  }
+  function openTerminal() {
+    screen.hidden = false;
+    screen.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('terminal-active');
+    input.focus();
+  }
+  function closeTerminal() {
+    screen.hidden = true;
+    screen.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('terminal-active');
+    openButton.focus();
+  }
+  openButton.addEventListener('click', openTerminal);
+  closeButton.addEventListener('click', closeTerminal);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !screen.hidden) closeTerminal();
+  });
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const command = input.value.trim().toLowerCase();
+    if (!command) return;
+    printLine('saisha@portfolio:~$ ' + command, 'terminal-command');
+    input.value = '';
+    if (command === 'clear') { output.innerHTML = ''; return; }
+    if (command === 'exit') { closeTerminal(); return; }
+    if (commands[command]) commands[command].forEach(line => printLine(line));
+    else printLine('Command not found. Type "help" to see available commands.', 'terminal-error');
+  });
+})();
+</script>
+
 </body>
 </html>
