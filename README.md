@@ -78,7 +78,7 @@ WD_1_PersonalPortfolio_byte/
 ├── .gitignore
 ├── portfolio-desktop.png
 ├── portfolio-projects.png
-└── portfolio-mobile.png
+└── portfolio-mobile.jpeg
 ```
 
 ## Contact
