@@ -56,7 +56,7 @@ A collaborative interactive website centered around Pip, a friendly dream-world 
 ![Portfolio Projects Screenshot](portfolio-projects.png)
 
 ### Mobile View
-![Portfolio Mobile Screenshot](portfolio-mobile.png)
+![Portfolio Mobile Screenshot](portfolio-mobile.jpeg)
 
 ## Run Locally
 
