@@ -1,22 +1,93 @@
+
 # Saisha Rite — Personal Portfolio
 
-A responsive personal portfolio built with HTML, CSS, and vanilla JavaScript. The home section uses a clean white-and-purple split layout inspired by the provided reference; the rest of the portfolio retains About, Skills, Projects, Education, Resume, and Contact sections.
+A responsive personal portfolio built using HTML, CSS, and vanilla JavaScript. It showcases my background, technical skills, projects, education, resume, and contact information.
 
-## Run locally
+The portfolio also includes an interactive **Terminal Mode**, where visitors can type commands to explore my profile.
 
-1. Open this folder in VS Code.
-2. Open `index.html` with Live Server, or serve the folder with any static HTTP server.
-3. Keep the folder structure intact so `style.css`, `script.js`, and `assets/` load correctly.
+## Live Website
 
-## Personalize before publishing
+[Visit My Portfolio](https://saisha-portfolio.vercel.app)
 
-- **Portrait:** Replace `assets/profile-placeholder.svg` with your photo, or update the image path in `index.html` to point to a photo file. Use a clear, professional portrait with the subject centered.
-- **Social profiles and email:** Search `index.html` for `YOUR-GITHUB-USERNAME`, `YOUR-LINKEDIN-PROFILE`, and `YOUR_EMAIL@example.com`, then replace each placeholder with your own profile/contact details. These are placeholders, not working profile links.
-- **Resume:** Add your PDF at `assets/Resume.pdf`; the download button expects that path.
-- **Contact form:** The template retains the source Formspree form ID. Before deployment, confirm it belongs to you or replace it with your own Formspree form ID. Submit a test message from the deployed site.
-- **Project links:** Replace placeholder GitHub URLs with actual repository URLs. Keep BorrowHub labelled as in development unless it is complete.
-- **Accuracy:** Update project descriptions, skills, and education details to reflect your actual experience.
+## Features
 
-## Deploy to Vercel
+- Responsive design for desktop, tablet, and mobile.
+- About, Skills, Projects, Education, Resume, and Contact sections.
+- Animated role text and scroll-reveal effects.
+- Mobile navigation menu.
+- Interactive Terminal Mode with `help`, `about`, `skills`, `projects`, `contact`, `clear`, and `exit` commands.
+- Contact form connected to Formspree.
+- Downloadable resume.
 
-This is a static site; no build step is required. Import the repository in Vercel, choose the `Other` framework preset, and leave the build command empty. Ensure `index.html`, `style.css`, `script.js`, and `assets/` are in the deployed root.
+## Projects
+
+### 1. Personal Portfolio Website
+A responsive portfolio website showcasing my skills, education, projects, and contact information.
+
+- Technologies: HTML, CSS, JavaScript
+- [GitHub Repository](https://github.com/SaishaRite/WD_1_PersonalPortfolio_byte)
+
+### 2. BorrowHub
+A campus resource-sharing platform concept where students can list, discover, lend, and borrow items.
+
+- Status: In development
+- Technologies: HTML, CSS, JavaScript, Database
+- [GitHub Profile](https://github.com/SaishaRite)
+
+### 3. NexaFlow — Responsive Landing Page
+A responsive, matrix-inspired landing page with parallax scrolling and interactive UI elements.
+
+- Technologies: HTML, CSS, JavaScript
+- [GitHub Repository](https://github.com/SaishaRite/WD_2_ResponsiveLandingPage_byte)
+- [Live Demo](https://nexaflow-saisharite.vercel.app)
+
+### 4. Pip’s Dream World — HAX.Baby
+A collaborative interactive website centered around Pip, a friendly dream-world character, developed as part of a 48-hour HAX.Baby hackathon.
+
+- Technologies: HTML, CSS, JavaScript
+- [Live Demo](https://haxbaby-olive.vercel.app)
+
+## Screenshots
+
+### Desktop View
+![Portfolio Desktop Screenshot](screenshots/portfolio-desktop.png)
+
+### Projects Section
+![Portfolio Projects Screenshot](screenshots/portfolio-projects.png)
+
+### Mobile View
+![Portfolio Mobile Screenshot](screenshots/portfolio-mobile.png)
+
+## Run Locally
+
+1. Clone or download this repository.
+2. Open the project folder in VS Code.
+3. Run `index.html` using Live Server.
+4. Keep the CSS, JavaScript, portrait, and resume files in the same project folder.
+
+## Project Structure
+
+```text
+WD_1_PersonalPortfolio_byte/
+├── index.html
+├── style.css
+├── script.js
+├── saisha_pic.jpeg
+├── resume_saisha.pdf
+├── README.md
+├── .gitignore
+└── screenshots/
+    ├── portfolio-desktop.png
+    ├── portfolio-projects.png
+    └── portfolio-mobile.png
+```
+
+## Contact
+
+- Email: saisamrat2020@gmail.com
+- GitHub: [SaishaRite](https://github.com/SaishaRite)
+- LinkedIn: [Saisha Rite](https://www.linkedin.com/in/saisha-rite-6aba95383)
+
+## Deployment
+
+This is a static website deployed using Vercel. No build command is required.
