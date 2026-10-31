@@ -1,4 +1,4 @@
-// Typing animation in the hero heading.
+
 const typingTarget = document.getElementById('typing-text');
 const roles = ['CSE Student', 'Web Developer', 'Problem Solver', 'Tech Explorer'];
 let roleIndex = 0;
@@ -23,7 +23,7 @@ function runTypingAnimation() {
 }
 runTypingAnimation();
 
-// Mobile navigation open / close.
+
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav-links');
 const navItems = document.querySelectorAll('.nav-link');
@@ -50,8 +50,6 @@ window.addEventListener('resize', () => {
   if (window.innerWidth > 700) closeMenu();
 });
 
-// Reveal cards as they enter the viewport. The no-IntersectionObserver fallback
-// keeps all content visible in older browsers.
 const revealItems = document.querySelectorAll(
   '.section-heading, .panel, .skill-card, .project-card, .qualification-card, .resume-note, .contact-wrap'
 );
@@ -70,7 +68,6 @@ if ('IntersectionObserver' in window) {
   revealItems.forEach((item) => item.classList.add('visible'));
 }
 
-// Highlight the current navigation item while scrolling.
 const observedSections = document.querySelectorAll('main section[id]');
 if ('IntersectionObserver' in window) {
   const sectionObserver = new IntersectionObserver((entries) => {
@@ -84,7 +81,4 @@ if ('IntersectionObserver' in window) {
   observedSections.forEach((section) => sectionObserver.observe(section));
 }
 
-// The contact form is handled by the Formspree AJAX library in index.html.
-
-// Current year in the footer.
 document.getElementById('year').textContent = new Date().getFullYear();
