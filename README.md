@@ -50,13 +50,13 @@ A collaborative interactive website centered around Pip, a friendly dream-world 
 ## Screenshots
 
 ### Desktop View
-![Portfolio Desktop Screenshot](screenshots/portfolio-desktop.png)
+![Portfolio Desktop Screenshot](portfolio-desktop.png)
 
 ### Projects Section
-![Portfolio Projects Screenshot](screenshots/portfolio-projects.png)
+![Portfolio Projects Screenshot](portfolio-projects.png)
 
 ### Mobile View
-![Portfolio Mobile Screenshot](screenshots/portfolio-mobile.png)
+![Portfolio Mobile Screenshot](portfolio-mobile.png)
 
 ## Run Locally
 
@@ -76,10 +76,9 @@ WD_1_PersonalPortfolio_byte/
 ├── resume_saisha.pdf
 ├── README.md
 ├── .gitignore
-└── screenshots/
-    ├── portfolio-desktop.png
-    ├── portfolio-projects.png
-    └── portfolio-mobile.png
+├── portfolio-desktop.png
+├── portfolio-projects.png
+└── portfolio-mobile.png
 ```
 
 ## Contact
